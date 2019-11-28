@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition>
+    <transition name="slide-menu">
       <router-view></router-view>
     </transition>
 
@@ -69,18 +69,18 @@ export default {
 @import "assets/css/base.css";
 #app {
   overflow-x: hidden;
-  .v-enter {
+  .slide-menu-enter {
     opacity: 0;
     transform: translateX(100%);
     position: absolute;
   }
-  .v-leave-to {
+  .slide-menu-leave-to {
     opacity: 0;
     transform: translateX(-100%);
     position: absolute;
   }
-  .v-enter-active,
-  .v-leave-active {
+  .slide-menu-enter-active,
+  .slide-menu-leave-active {
     transition: all 0.5s ease;
   }
 }

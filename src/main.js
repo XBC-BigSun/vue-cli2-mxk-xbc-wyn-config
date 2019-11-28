@@ -8,10 +8,12 @@ import url from './network/damainName'
 import qs from 'qs'
 import requestObj from './network/request';
 
+
 Vue.use(ElementUI);
 Vue.prototype.$Qs = qs;
 Vue.prototype.$URL = url;
 Vue.prototype.$requestObj = requestObj;
+
 
 Vue.config.productionTip = false
 
