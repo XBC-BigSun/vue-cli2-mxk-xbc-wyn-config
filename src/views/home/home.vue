@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import menuTree from "../../components/common/menuTree/wrapRecursion";
+import menuTree from "components/common/menuTree/wrapRecursion";
 export default {
   name: "home",
   props: [""],
@@ -24,8 +24,7 @@ export default {
       msg: "这里是 home 组件",
       wrapboxstyle: {
         "padding-bottom": "20px",
-        margin: "20px auto",
-        width: "400px"
+        margin: "20px auto"
       },
       wrapboxheaderstyle: {
         width: "260px",
