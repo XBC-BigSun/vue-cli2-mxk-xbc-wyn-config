@@ -4,11 +4,6 @@
     <wrap-left-slide
       :menuarr="arr"
       :selectindex="flagIndex"
-      :depth="depth"
-      :wrapboxstyle="wrapboxstyle"
-      :wrapboxheaderstyle="wrapboxheaderstyle"
-      :bodypstyle="bodypstyle"
-      :bodyptthirdstyle="bodyptthirdstyle"
       @selectitem="selectItem"
     ></wrap-left-slide>
   </div>
@@ -26,32 +21,7 @@ export default {
         "padding-bottom": "20px",
         margin: "20px auto"
       },
-      wrapboxheaderstyle: {
-        width: "260px",
-        height: "50px",
-        "font-size": "22px",
-        color: "#fff",
-        background: "red",
-        "line-height": "50px",
-        padding: "0 20px",
-        margin: 0
-      },
-      bodypstyle: {
-        padding: "0 20px",
-        height: "50px",
-        "border-bottom": "1px solid #dedede",
-        margin: 0,
-        "line-height": "50px",
-        position: "relative",
-        "font-size": "16px",
-        color: "#666",
-        cursor: "pointer"
-      },
-      bodyptthirdstyle: {
-        "line-height": "50px"
-      },
       flagIndex: "6244f76be38fe16616adeah975e7hdb7",
-      depth: 0,
       arr: [
         {
           name: "主要职责",

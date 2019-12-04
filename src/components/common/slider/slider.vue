@@ -38,7 +38,7 @@
 export default {
   name: "slider",
   props: {
-    initStyle:{
+    initStyle: {
       type: Object,
       required: true
     },
@@ -202,7 +202,8 @@ export default {
   destroyed() {} //组件销毁
 };
 </script>
-<style lang='scss' scoped>
+<style lang='scss' scoped> 
+@import "./personal.scss";
 .slider {
   position: relative;
   overflow: hidden;

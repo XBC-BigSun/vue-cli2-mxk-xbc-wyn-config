@@ -1,30 +1,29 @@
 
 <template>
-  <div class="wrapRecursion" :style="wrapboxstyle">
-    <p :style="wrapboxheaderstyle">目录树的标题</p>
-    <left-slide
-      :menuarr="arr"
-      :selectindex="flagIndex"
-      :depth="depth"
-      :bodypstyle="bodypstyle"
-      :bodyptthirdstyle="bodyptthirdstyle"
-      @selectitem="selectitem"
-    ></left-slide>
+  <div class="wrapRecursion">
+    <p class="wrapboxheaderstyle">目录树的标题</p>
+    <left-slide :menuarr="arr" :selectindex="flagIndex" :depth="depth" @selectitem="selectitem"></left-slide>
   </div>
 </template>
 <script>
 import recursion from "./recursion";
 export default {
   name: "wrapRecursion",
-  props: [
-    "menuarr",
-    "selectindex",
-    "depth",
-    "wrapboxstyle",
-    "wrapboxheaderstyle",
-    "bodypstyle",
-    "bodyptthirdstyle"
-  ],
+  // props: ["menuarr", "selectindex", "depth"],
+  props: {
+    menuarr: {
+      type: Array,
+      required: true
+    },
+    selectindex: {
+      type: [String, Number],
+      required: true
+    },
+    depth: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       msg: "外包装递归组件",
@@ -102,6 +101,7 @@ export default {
 };
 </script>
 <style>
+@import "./personal.css";
 .wrapRecursion {
   max-width: 260px;
   height: auto;

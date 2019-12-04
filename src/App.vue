@@ -65,7 +65,7 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' >
 @import "assets/css/base.css";
 #app {
   overflow-x: hidden;

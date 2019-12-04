@@ -1,0 +1,51 @@
+/* 友情提示：您在使用目录树组件帮定的css的时候不能使用scss的写法否则无效 由于部分HTML内部添加了默认样式请您在修改无效的时候添加 !important */
+.wrapRecursion {
+  border: 1px solid red;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.wrapboxheaderstyle {
+  width: 260px;
+  height: 50px;
+  font-size: 22px;
+  color: #fff;
+  background-color: red;
+  line-height: 50px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.menuItem {
+  padding: 0 20px;
+  height: 50px;
+  border-bottom: 1px solid #dedede;
+  margin: 0;
+  line-height: 50px;
+  position: relative;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.bodyptthirdstyle {
+  line-height: 50px;
+}
+
+.left-slide>li>p:hover {
+  background-color: #3d89cf;
+}
+
+.left-slide>li>p.active {
+  background-color: #3d89cf !important;
+}
+
+.left-slide>li>p.active::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+}

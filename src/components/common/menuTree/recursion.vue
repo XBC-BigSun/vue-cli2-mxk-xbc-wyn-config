@@ -1,14 +1,10 @@
   <template id='leftSlide'>
   <ul class="left-slide">
     <li v-for="(item,index) in menuarr" :key="index">
-      <p
-        :class="{active:item.mark==selectindex}"
-        @click.stop="selectitem(item)"
-        :style="bodypstyle"
-      >
+      <p class="menuItem" :class="{active:item.mark==selectindex}" @click.stop="selectitem(item)">
         <span :class="item.headerIcon" :style="transform"></span>
         <span :style="transform">{{item.name}}</span>
-        <span v-if="item.children" :class="item.footerIcon" :style="bodyptthirdstyle"></span>
+        <span v-if="item.children" class="bodyptthirdstyle" :class="item.footerIcon"></span>
       </p>
       <el-collapse-transition>
         <left-slide
@@ -16,8 +12,6 @@
           :menuarr="item.children"
           :selectindex="selectindex"
           @selectitem="selectitem"
-          :bodypstyle="bodypstyle"
-          :bodyptthirdstyle="bodyptthirdstyle"
           :depth="depth+1.5"
         ></left-slide>
       </el-collapse-transition>
@@ -28,7 +22,21 @@
 <script>
 export default {
   name: "left-slide",
-  props: ["menuarr", "selectindex", "depth", "bodypstyle","bodyptthirdstyle"],
+  // props: ["menuarr", "selectindex", "depth"],
+  props: {
+    menuarr: {
+      type: Array,
+      required: true
+    },
+    selectindex: {
+      type: [String, Number],
+      required: true
+    },
+    depth: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       msg: "左侧目录导航栏",
@@ -73,7 +81,8 @@ export default {
   }
 };
 </script>
-<style  scoped>
+<style>
+@import "./personal.css";
 .left-slide > li > p {
   position: relative;
 }
@@ -85,7 +94,7 @@ export default {
 .left-slide > li > p > span:nth-child(3) {
   float: right;
 }
-.left-slide > li > p:hover {
+/* .left-slide > li > p:hover {
   background-color: #3d89cf;
 }
 .left-slide > li > p.active {
@@ -100,5 +109,5 @@ export default {
   background-color: red;
   top: 0;
   left: 0;
-}
+} */
 </style>

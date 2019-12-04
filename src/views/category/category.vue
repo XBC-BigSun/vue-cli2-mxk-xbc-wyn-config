@@ -4,7 +4,7 @@
     <slider :init-style="initStyle" :main-img-style="mainImgStyle">
       <a href :slot="'img'+index" v-for="(item,index) in imgArr" :key="index">
         <img :src="item.imgUrl" alt />
-        <p>我是段落</p>
+        <p>我是段落{{index}}</p>
       </a>
     </slider>
   </div>
@@ -96,52 +96,14 @@ export default {
   destroyed() {} //组件销毁
 };
 </script>
-<style lang='scss' >
+<style lang='scss' scoped>
 .category {
   p {
     text-align: center;
-  }
-  .slider-ctl {
+    position: relative;
+    top: -100px;
+    left: 0;
     background-color: red;
-    span {
-      width: 20px;
-      height: 50px;
-      line-height: 50px;
-      font-size: 30px;
-      font-weight: 700;
-      color: #fff;
-      background-color: skyblue;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .slider-ctl-prev {
-      left: 0;
-    }
-    .slider-ctl-next {
-      right: 0;
-    }
-  }
-  .slider-indcator {
-    width: 280px;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    .slider-ctl-icon {
-      width: 20px;
-      height: 20px;
-      background-color: #fff;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    .slider-ctl-icon.active {
-      background-color: yellow;
-    }
   }
 }
 </style>
