@@ -1,4 +1,4 @@
-//肖宝成修改来了index.js的文件
+//肖宝成修改来了index.js的文件撒手多
 import Vue from 'vue'
 import Router from 'vue-router'
 
