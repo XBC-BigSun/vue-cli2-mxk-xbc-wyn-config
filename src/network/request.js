@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+//马兴凯添加了注释
 function request(config, vm) {
   const instance = axios.create({
     baseURL: vm.$URL,
