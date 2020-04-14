@@ -1,8 +1,8 @@
 # vue-cli2-myself-config
 
-> 基于vue-cli2脚手架符合自己配置的脚手架123
+> 基于vue-cli2脚手架符合自己配置的脚手架1
 
-//肖宝成添加了一行代码
+//肖宝成添加了一行代码1
 
 ## Build Setup
 
