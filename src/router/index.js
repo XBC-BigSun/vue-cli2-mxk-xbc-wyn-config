@@ -1,5 +1,6 @@
-import Vue from 'vue'  //添加
-import Router from 'vue-router' 
+//肖宝成修改来了index.js的文件
+import Vue from 'vue'
+import Router from 'vue-router'
 
 Vue.use(Router)
 
