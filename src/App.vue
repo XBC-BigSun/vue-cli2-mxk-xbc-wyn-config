@@ -6,7 +6,7 @@
     </transition>
     <!-- 肖宝成添加了一行注释 -->
     <tabar>
-      <!-- 肖宝成又添加了一行注释 -->
+      <!-- 马兴凯又添加了一行注释 -->
       <tabar-item
         path-name="home"
         :active-style="activeStyle"
