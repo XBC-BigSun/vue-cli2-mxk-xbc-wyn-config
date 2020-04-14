@@ -3,9 +3,12 @@
     <transition name="slide-menu">
       <router-view></router-view>
     </transition>
-
+    <!-- 肖宝成添加了一行注释 -->
     <tabar>
-      <tabar-item path-name="home" :active-style="activeStyle">
+      <tabar-item
+        path-name="home"
+        :active-style="activeStyle"
+      >
         <p slot="icon-default">
           <span class="el-icon-goods"></span>
         </p>
@@ -14,7 +17,10 @@
         </p>
         <template slot="text">首页</template>
       </tabar-item>
-      <tabar-item path-name="category" :active-style="activeStyle">
+      <tabar-item
+        path-name="category"
+        :active-style="activeStyle"
+      >
         <p slot="icon-default">
           <span class="el-icon-location-outline"></span>
         </p>
@@ -23,7 +29,10 @@
         </p>
         <template slot="text">分类</template>
       </tabar-item>
-      <tabar-item path-name="cart" :active-style="activeStyle">
+      <tabar-item
+        path-name="cart"
+        :active-style="activeStyle"
+      >
         <p slot="icon-default">
           <span class="el-icon-warning-outline"></span>
         </p>
@@ -32,7 +41,10 @@
         </p>
         <template slot="text">购物车</template>
       </tabar-item>
-      <tabar-item path-name="profile" :active-style="activeStyle">
+      <tabar-item
+        path-name="profile"
+        :active-style="activeStyle"
+      >
         <p slot="icon-default">
           <span class="el-icon-user"></span>
         </p>
