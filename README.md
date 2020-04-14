@@ -1,6 +1,6 @@
 # vue-cli2-myself-config
 
-> 基于vue-cli2脚手架符合自己配置的脚手架
+> 基于vue-cli2脚手架符合自己配置的脚手架1
 
 ## Build Setup
 
