@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- 马兴凯添加了一行注释 -->
     <transition name="slide-menu">
       <router-view></router-view>
     </transition>
