@@ -1,4 +1,3 @@
-//肖宝成修改来了index.js的文件第二次修改这个文件
 import Vue from 'vue'
 import Router from 'vue-router'
 
